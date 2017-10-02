@@ -4,13 +4,12 @@
     <link href="Estilo/LogIn_Style.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="jumbotron">
+    <div class="jumbotron" id="caja_registro" aria-autocomplete="none">
         <div class="form-group">
             <h1>¡Ingrese ahora!</h1>
             <label>Correo:</label>
             <asp:TextBox ID="txtCorreo" runat="server" CssClass="form-control" TextMode="Email"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Complete el campo correo" CssClass="error" ControlToValidate="txtCorreo" Display="Dynamic">Complete este campo</asp:RequiredFieldValidator>
-            <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Ingrese un correo valido" CssClass="error" ControlToValidate="txtCorreo" Display="Dynamic">Ingrese un correo valido</asp:CustomValidator>
             <br />
             <label>Clave:</label>
             <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control"></asp:TextBox>
